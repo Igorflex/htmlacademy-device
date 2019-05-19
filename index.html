@@ -12,7 +12,8 @@
       <img src="img/general/logo-device.svg" width="163" height="35" alt="Логотип Device">
     </a>
     <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-      <input type="search" placeholder="Поиск по сайту" name="search">
+      <label class="visually-hidden" for="search">Поиск по сайту</label>
+      <input type="search" placeholder="Поиск по сайту" name="search" id="search">
       <button type="submit">Найти</button>
     </form>
     <ul class="user-list">
@@ -181,17 +182,15 @@
   <section class="modal modal-feedback">
     <h2 class="visually-hidden">Форма обратной связи</h2>
     <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
-      <div>
+      <div class="feedback-form-section">
         <label for="fullname">Ваше имя:</label>
-        <input id="fullname" type="text" name="fullname" placeholder="Имя Фамилия">
-      </div>
-      <div>
+        <input type="text" name="fullname" placeholder="Имя Фамилия" id="fullname">
         <label for="email">Ваш e-mail:</label>
-        <input id="email" type="text" name="email" placeholder="email@example.com">
+        <input type="email" name="email" placeholder="email@example.com" id="email">
       </div>
-      <div>
+      <div class="feedback-form-section">
         <label for="message">Текст письма:</label>
-        <textarea id="message" name="message"></textarea>
+        <textarea name="message" id="message"></textarea>
       </div>
 
       <button class="button" type="submit">Отправить</button>

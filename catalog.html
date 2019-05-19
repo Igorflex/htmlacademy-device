@@ -12,7 +12,8 @@
       <img src="img/general/logo-device.svg" width="163" height="35" alt="Логотип Device">
     </a>
     <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-      <input type="search" placeholder="Поиск по сайту" name="search">
+      <label class="visually-hidden" for="search">Поиск по сайту</label>
+      <input type="search" placeholder="Поиск по сайту" name="search" id="search">
       <button type="submit">Найти</button>
     </form>
     <ul class="user-list">
@@ -81,7 +82,7 @@
 
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
-      <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+      <form class="filter" action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
           <legend>Цвет</legend>
           <ul class="filter-list">
