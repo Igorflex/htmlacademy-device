@@ -35,3 +35,157 @@
   url("../fonts/opensans.woff") format("woff"),
   url("../fonts/opensans.woff2") format("woff2");
 }
+
+/* Стили */
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  letter-spacing: 0.15px;
+
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
+.modal {
+  display: none;
+}
+
+/* .visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} */
+
+/* Header */
+
+.main-header {
+  background-color: #f7e296;
+}
+
+.user-list,
+.navigation-list,
+.dropdown-list {
+  list-style: none;
+}
+
+.user-list a,
+.navigation-list a,
+.dropdown-list a {
+  color: #000000;
+}
+
+.navigation-item > a {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+
+/* Main */
+/* Slider */
+
+.slider-list {
+  list-style: none;
+}
+
+.slider-description h3{
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 56px;
+  font-weight: 800;
+  letter-spacing: 0.47px;
+}
+
+.slider-description p {
+  color: #464646;
+}
+
+.slider-table td {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 300;
+  letter-spacing: 0.36px;
+}
+
+.slider-table th {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 300;
+  
+}
+/* Popular */
+
+.popular-list {
+  list-style: none;
+}
+.popular-list a {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  letter-spacing: 0.18px;
+
+  color: #000000;
+}
+
+/* Brands */
+
+.brands-list {
+  list-style: none;
+}
+
+/* Company-info */
+
+.index-columns h2{
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 800;
+  letter-spacing: 0.47px;
+}
+
+.index-columns p {
+  color: #464646;
+}
+
+.company-info ul {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 800;
+}
+
+/* Footer */
+
+.main-footer {
+  color: #ffffff;
+  background-color: #464646;
+}
+.main-footer a {
+  color: #ffffff;
+}
+.footer-navigation,
+.social-list {
+  list-style: none;
+
+}
+
