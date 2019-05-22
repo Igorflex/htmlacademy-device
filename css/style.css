@@ -81,14 +81,13 @@ a {
   vertical-align: middle;
   text-transform: uppercase;
 
-  background: linear-gradient(0deg, #ffffff 40%, #f0c52e 40%, #f0c52e 60%,#ffffff 40%);
+  background-image: linear-gradient(0deg, #ffffff 40%, #f0c52e 40%, #f0c52e 60%, #ffffff 40%);
   border: none;
-
 }
 
 .button:hover,
 .button:focus {
-  background: #f0c52e;
+  background-image: linear-gradient(0deg, #f0c52e 0%, #f0c52e 100%);
 }
 
 .button:active {
