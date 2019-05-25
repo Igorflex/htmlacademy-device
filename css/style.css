@@ -69,6 +69,12 @@ a {
   color: #000000;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .button {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
@@ -110,13 +116,78 @@ a {
 /* Header */
 
 .main-header {
+  padding-left: 60px;
+  padding-right: 60px;
+
   background-color: #f7e296;
 }
 
 .user-list,
 .navigation-list,
 .dropdown-list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.main-header-logo {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.main-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-form {
+  width: 500px;
+}
+
+.user-list {
+  display: flex;
+  justify-content: space-between;
+  width: 500px
+}
+
+.user-item {
+  margin-left: 40px;
+}
+
+.user-login {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.logout-link {
+  margin-left: 15px;
+  opacity: 0.3;
+}
+
+.navigation-list {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 50px;
+}
+
+
+.navigation-item {
+  margin-right: 40px;
+
+}
+
+.navigation-item:first-child {
+  margin-right: auto;
+  width: 480px;
+}
+
+.navigation-item:last-child {
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .navigation-link {
@@ -131,8 +202,33 @@ a {
 /* Main */
 /* Slider */
 
+.slider {
+  margin-bottom: 80px;
+}
+
 .slider-list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.slider-item {
+  display: none;
+}
+
+.slider-item--current {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-image {
+  width: 560px;
+  text-align: center;
+}
+
+.slider-description {
+  width: 560px;
 }
 
 .slider-title {
@@ -163,7 +259,16 @@ a {
 
 /* Popular */
 
+.popular {
+  margin-bottom: 80px;
+}
+
 .popular-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -177,11 +282,35 @@ a {
 
 /* Brands */
 
+.brands {
+  margin-bottom: 80px;
+}
+
 .brands-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
+.brands-image {
+  filter: grayscale(100%);
+  opacity: 0.2;
+}
+
+.brands-image:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
 /* Company-info */
+
+.index-columns .container {
+  display: flex;
+  justify-content: space-between;
+}
 
 .index-columns h2{
   font-family: "Gilroy", Arial, sans-serif;
@@ -205,6 +334,8 @@ a {
 /* Footer */
 
 .main-footer {
+  margin-top: 80px;
+
   color: #ffffff;
   background-color: #464646;
 }
@@ -216,12 +347,47 @@ a {
 .footer-logo-image {
   fill: #f0c52e;
 }
+.footer-top-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 60px;
+}
 
-.footer-navigation,
+.footer-nav-list,
 .social-list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
+.footer-middle-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-nav-list {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.footer-nav-item {
+  margin-right: 30px;
+}
+
+.footer-nav-link {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
 /* Inner page */
 
 .page-title {
