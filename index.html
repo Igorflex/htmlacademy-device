@@ -9,8 +9,9 @@
 </head>
 
 <body>
-  <div class="container">
-    <header class="main-header">
+
+  <header class="main-header">
+    <div class="container">
       <a class="main-header-logo">
         <img src="img/general/logo-device.svg" width="163" height="35" alt="Логотип Device">
       </a>
@@ -39,23 +40,35 @@
           <li class="navigation-item dropdown">
             <a class="navigation-link" href="catalog.html">Каталог товаров</a>
             <ul class="dropdown-list">
-              <li class="dropdown-item">
-                <a href="#">Виртуальная реальность</a>
+              <li class="dropdown-list-section">
+                <ul class="dropdown-list-col">
+                  <li class="dropdown-item">
+                    <a href="#">Виртуальная реальность</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="catalog.html">Моноподы для селфи</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#">Экшн-камеры</a>
+                  </li>
+                </ul>
               </li>
-              <li class="dropdown-item">
-                <a href="catalog.html">Моноподы для селфи</a>
+              <li class="dropdown-list-section">
+                <ul class="dropdown-list-col">
+                  <li class="dropdown-item">
+                    <a href="#">Фитнес-браслеты</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#">Умные часы</a>
+                  </li>
+                </ul>
               </li>
-              <li class="dropdown-item">
-                <a href="#">Экшн-камеры</a>
-              </li>
-              <li class="dropdown-item">
-                <a href="#">Фитнес-браслеты</a>
-              </li>
-              <li class="dropdown-item">
-                <a href="#">Умные часы</a>
-              </li>
-              <li class="dropdown-item">
-                <a href="#">Квадрокоптеры</a>
+              <li class="dropdown-list-section">
+                <ul class="dropdown-list-col">
+                  <li class="dropdown-item">
+                    <a href="#">Квадрокоптеры</a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </li>
@@ -70,9 +83,9 @@
           </li>
         </ul>
       </nav>
+    </div>
+  </header>
 
-    </header>
-  </div>
 
   <main>
     <h1 class="visually-hidden">Магазин цифровой техники "Девайс"</h1>
@@ -170,22 +183,41 @@
         <h2 class="visually-hidden">Популярные товары</h2>
         <ul class="popular-list">
           <li class="popular-item">
-            <a href="#">Виртуальная реальность</a>
+
+            <a class="popular-link" href="#">
+              <img src="img/index/svg/popular-1.svg" alt="Виртуальная реальность">
+              <p>Виртуальная реальность</p>
+            </a>
           </li>
           <li class="popular-item">
-            <a href="catalog.html">Моноподы для селфи</a>
+            <a class="popular-link" href="catalog.html">
+              <img src="img/index/svg/popular-2.svg" alt="Моноподы для селфи">
+              <p>Моноподы для селфи</p>
+            </a>
           </li>
           <li class="popular-item">
-            <a href="#">Экшн-камеры</a>
+            <a class="popular-link" href="#">
+              <img src="img/index/svg/popular-3.svg" alt="Экшн-камеры">
+              <p>Экшн-камеры</p>
+            </a>
           </li>
           <li class="popular-item">
-            <a href="#">Фитнес-браслеты</a>
+            <a class="popular-link" href="#">
+              <img src="img/index/svg/popular-4.svg" alt="Фитнес-браслеты">
+              <p>Фитнес-браслеты</p>
+            </a>
           </li>
           <li class="popular-item">
-            <a href="#">Умные часы</a>
+            <a class="popular-link" href="#">
+              <img src="img/index/svg/popular-5.svg" alt="Умные часы">
+              <p>Умные часы</p>
+            </a>
           </li>
           <li class="popular-item">
-            <a href="#">Квадрокоптеры</a>
+            <a class="popular-link" href="#">
+              <img src="img/index/svg/popular-6.svg" alt="Квадрокоптеры">
+              <p>Квадрокоптеры</p>
+            </a>
           </li>
         </ul>
       </div>
@@ -196,16 +228,16 @@
         <h2 class="visually-hidden">Производители</h2>
         <ul class="brands-list">
           <li class="brands-item">
-            <img class="brands-image" src="img/index/brand-1.png" width="260" height="100" alt="DJI">
+            <img class="brands-image" src="img/index/brand-1.jpg" width="260" height="100" alt="DJI">
           </li>
           <li class="brands-item">
-            <img class="brands-image" src="img/index/brand-2.png" width="260" height="100" alt="SP Gadgets">
+            <img class="brands-image" src="img/index/brand-2.jpg" width="260" height="100" alt="SP Gadgets">
           </li>
           <li class="brands-item">
-            <img class="brands-image" src="img/index/brand-3.png" width="260" height="100" alt="Go Pro">
+            <img class="brands-image" src="img/index/brand-3.jpg" width="260" height="100" alt="Go Pro">
           </li>
           <li class="brands-item">
-            <img class="brands-image" src="img/index/brand-4.png" width="260" height="100" alt="HTC Vive">
+            <img class="brands-image" src="img/index/brand-4.jpg" width="260" height="100" alt="HTC Vive">
           </li>
         </ul>
       </div>
@@ -240,7 +272,8 @@
 
   <footer class="main-footer">
     <div class="container">
-      <div class="footer-top-wrapper"><a class="footer-logo">
+      <div class="footer-top-wrapper">
+        <a class="footer-logo">
           <svg class="footer-logo-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164 35" width="164"
             height="35">
             <path
@@ -274,24 +307,38 @@
         </ul>
         <a class="phone-link" href="tel:+74954959595" rel="nofollow">Тел.: +7 (495) 495-95-95</a>
       </div>
-      <div class="footer-social">
-        <ul class="social-list">
-          <li class="social-item">
-            <a class="social-link social-link--fb" href="#" aria-label="Девайс на Фэйсбук">Фейсбук</a>
-          </li>
-          <li class="social-item">
-            <a class="social-link social-link--inst" href="#" aria-label="Девайс в Инстаграм">Инстаграм</a>
-          </li>
-          <li class="social-item">
-            <a class="social-link social-link--tw" href="#" aria-label="Девайс в Твиттер">Твиттер</a>
-          </li>
-        </ul>
+      <div class="footer-bottom-wrapper">
+        <div class="footer-social">
+          <ul class="social-list">
+            <li class="social-item">
+              <a class="social-link social-link--fb" href="#" aria-label="Девайс на Фэйсбук">
+                <img class="social-image" src="img/general/fb.svg" width="32" height="32" alt="Фэйсбук">
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link social-link--inst" href="#" aria-label="Девайс в Инстаграм">
+                <img class="social-image" src="img/general/instagram.svg" width="32" height="32" alt="Инстаграм">
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link social-link--tw" href="#" aria-label="Девайс в Твиттер">
+                <img class="social-image" src="img/general/twitter.svg" width="32" height="32" alt="Твиттер">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="footer-copyright">
+          <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss"
+            aria-label="Страница интенсива HTMLAcademy">
+            <svg class="copyright-image" xmlns="http://www.w3.org/2000/svg" width="27" height="35"
+              viewBox="0 0 26.943 34.09">
+              <path
+                d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z" />
+            </svg>
+
+          </a>
+        </p>
       </div>
-      <p class="footer-copyright">
-        <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Страница интенсива HTMLAcademy">
-          <img src="img/general/logo-html.svg" width="27" height="35" alt="Логотип HTMLAcademy">
-        </a>
-      </p>
     </div>
   </footer>
 
