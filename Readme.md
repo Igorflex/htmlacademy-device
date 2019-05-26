@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Дмитрий Иванов](https://up.htmlacademy.ru/htmlcss/25/user/1030339).
-* Наставник: [Макс Кравченко](https://up.htmlacademy.ru/htmlcss/25/user/544023).
+* Наставник: [Анна Понамарёва](https://up.htmlacademy.ru/htmlcss/25/user/153610).
 
 ---
 
