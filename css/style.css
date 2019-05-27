@@ -45,7 +45,7 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 body {
@@ -153,10 +153,6 @@ a {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
-}
-
-.search-form {
-  width: 500px;
 }
 
 .user-list {
