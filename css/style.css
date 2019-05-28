@@ -76,6 +76,9 @@ a {
 }
 
 .button {
+  display: inline-block;
+  padding: 10px 40px;
+
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -153,7 +156,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 .user-list {
@@ -171,6 +174,59 @@ a {
 .user-login {
   margin-left: 0;
   margin-right: auto;
+}
+
+.login-link,
+.compare-link,
+.cart-link {
+  position: relative;
+
+  padding-left: 25px;
+}
+
+.login-link::before {
+  content: "";
+
+  position: absolute;
+  top: 4px;
+  left: 0;
+
+  width: 13px;
+  height: 12px;
+
+  background-image: url("../img/general/user.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.compare-link::before {
+  content: "";
+
+  position: absolute;
+  top: 6px;
+  left: 6px;
+
+  width: 13px;
+  height: 12px;
+
+  background-image: url("../img/general/compare.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.cart-link::before {
+  content: "";
+
+  position: absolute;
+  top: 3px;
+  left: 3px;
+
+  width: 13px;
+  height: 12px;
+
+  background-image: url("../img/general/cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .logout-link {
@@ -197,11 +253,11 @@ a {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  padding-bottom: 50px;
+  padding-bottom: 45px;
 }
 
 .navigation-item {
-  margin-right: 40px;
+  margin-right: 35px;
 
 }
 
@@ -211,7 +267,7 @@ a {
 }
 
 .navigation-item:last-child {
-  margin-left: 60px;
+  margin-left: 65px;
   margin-right: 0;
 }
 
@@ -233,12 +289,35 @@ a {
   opacity: 0.3;
 }
 
+.dropdown {
+  position: relative;
+}
+
+.dropdown::after {
+  content: "";
+
+  position: absolute;
+  top: 3px;
+  right: -27px;
+
+  width: 16px;
+  height: 16px;
+
+  opacity: 0.3;
+
+  background-image: url("../img/general/plus.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .dropdown-list {
   position: absolute;
   top: 35px;
   left: -60px;
 
-  display: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 
   width: 1160px;
   padding-top: 20px;
@@ -250,12 +329,12 @@ a {
 }
 
 
-.dropdown:hover ~ .dropdown-list,
-.dropdown:focus ~ .dropdown-list {
+/* .dropdown:hover .dropdown-list,
+.dropdown:focus .dropdown-list {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-}
+} */
 
 .dropdown-list-section {
   margin-right: 60px;
@@ -364,6 +443,7 @@ a {
 }
 
 .popular-link {
+  position: relative;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
