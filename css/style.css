@@ -103,7 +103,9 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -112,6 +114,9 @@ a {
   border: 0;
   padding: 0;
 
+  white-space: nowrap;
+
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -584,7 +589,23 @@ a {
 }
 
 .social-link {
+  display: block;
+  width: 32px;
+  height: 32px;
+
   opacity: 0.3;
+}
+
+.social-link--fb {
+  background-image: url("../img/general/fb.svg");
+}
+
+.social-link--inst {
+  background-image: url("../img/general/instagram.svg");
+}
+
+.social-link--tw {
+  background-image: url("../img/general/twitter.svg");
 }
 
 .social-link:hover,
