@@ -217,6 +217,8 @@
       </div>
     </section>
 
+    <!-- Тут будет секция услуг -->
+
     <section class="brands">
       <div class="container">
         <h2 class="visually-hidden">Производители</h2>
@@ -337,26 +339,38 @@
     <h2 class="visually-hidden">Форма обратной связи</h2>
 
     <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
-      <div class="feedback-form-section">
-        <label for="fullname">Ваше имя:</label>
-        <input type="text" name="fullname" placeholder="Имя Фамилия" id="fullname">
-        <label for="email">Ваш e-mail:</label>
-        <input type="email" name="email" placeholder="email@example.com" id="email">
+      <div class="feedback-form-wrapper">
+        <div class="feedback-form-section">
+          <label for="fullname">Ваше имя:</label>
+          <input type="text" name="fullname" placeholder="Имя Фамилия" id="fullname">
+        </div>
+        <div class="feedback-form-section">
+          <label for="email">Ваш e-mail:</label>
+          <input type="email" name="email" placeholder="email@example.com" id="email">
+        </div>
       </div>
-      <div class="feedback-form-section">
-        <label for="message">Текст письма:</label>
-        <textarea name="message" id="message"></textarea>
+      <div class="feedback-form-wrapper">
+
+        <div class="feedback-form-section feedback-form-textarea">
+          <label for="message">Текст письма:</label>
+          <textarea name="message" placeholder="В свободной форме" id="message"></textarea>
+        </div>
       </div>
+
       <button class="button" type="submit">Отправить</button>
     </form>
-    <button type="button" aria-label="Закрыть окно">Закрыть</button>
+    <button class="button-close" type="button" aria-label="Закрыть окно">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
   </section>
 
   <section class="modal modal-map">
     <h2 class="visually-hidden">Где мы находимся</h2>
     <img src="img/index/map-popup.jpg" width="960" height="559"
       alt="Офис находится по адресу город Москва, улица Строителей, 15">
-    <button type="button" aria-label="Закрыть окно">Закрыть</button>
+    <button class="button-close" type="button" aria-label="Закрыть окно">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
   </section>
 </body>
 
