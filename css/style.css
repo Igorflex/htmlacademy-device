@@ -1313,6 +1313,20 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
+.pagination-link--page {
+  opacity: 0.3;
+}
+
+.pagination-link--page:hover,
+.pagination-link--page:focus {
+  opacity: 0.6;
+}
+
+.pagination-link--page:active {
+  opacity: 1;
+}
+
+
 .pagination-list {
   display: flex;
 
@@ -1342,8 +1356,15 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-link--back:hover,
-.pagination-link--next:hover {
+.pagination-link--next:hover,
+.pagination-link--back:focus,
+.pagination-link--next:focus {
   background-color: #d9d9d9
+}
+
+.pagination-link--back:active,
+.pagination-link--next:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 /* Modal */
