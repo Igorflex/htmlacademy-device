@@ -171,11 +171,23 @@ input[type="radio"].visually-hidden {
   margin-bottom: 35px;
 }
 
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+
+  margin-right: 100px;
+}
+
 .search-input {
+  flex-grow: 1;
+
   position: relative;
   padding: 15px 40px;
 
   border: 0;
+  border-bottom: 2px solid transparent;
+
   background-color: transparent;
   background-image: url("../img/general/search.svg");
   background-repeat: no-repeat;
@@ -190,11 +202,21 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 0.6)
 }
 
+.search-input:focus {
+  border-bottom: 2px solid #000000;
+}
+
 .search-button {
+  visibility: hidden;
   padding: 15px;
   background-color: transparent;
   border: 2px solid #000000;
 }
+
+.search-input:focus ~ .search-button {
+  visibility: visible;
+}
+
 
 .search-button:hover,
 .search-button:focus {
@@ -1416,28 +1438,33 @@ input[type="radio"].visually-hidden {
 }
 
 .feedback-form-textarea {
-  width: 100%;
+  flex-grow: 1;
+  margin-right: 0;
 }
 
-.feedback-form input {
+.feedback-form input,
+.feedback-form textarea {
   padding: 20px;
   width: 100%;
-  border: 0;
+
   background-color: #f2f2f2;
   color: #464646;
+  border: 3px solid transparent;
 }
 
-.feedback-form input:hover {
+.feedback-form input:hover,
+.feedback-form textarea:hover {
   background-color: #eaeaea;
 }
 
-.feedback-form input:focus {
+.feedback-form input:focus,
+.feedback-form textarea:focus {
   background-color: #ffffff;
-  outline: 3px solid rgba(240, 197, 46, 0.5);
-
+  border: 3px solid rgba(240, 197, 46, 0.5);
 }
 
-.feedback-form input::placeholder {
+.feedback-form input::placeholder,
+.feedback-form textarea::placeholder {
   color: rgba(70, 70, 70, 0.4);
 }
 
