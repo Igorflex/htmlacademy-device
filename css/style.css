@@ -854,7 +854,8 @@ p.delivery-partners {
   padding-top: 50px;
 }
 
-.contacts img {
+.map-link {
+  display: block;
   margin-bottom: 58px;
   padding-top: 10px;
 }
@@ -881,6 +882,7 @@ p.delivery-partners {
 .main-footer {
   margin-top: 80px;
   padding-bottom: 58px;
+
   color: #ffffff;
 
   background-color: #464646;
@@ -1230,7 +1232,7 @@ p.delivery-partners {
 .filters {
   margin-right: 28px;
   padding-top: 70px;
-  padding-right: 36px;
+  padding-right: 42px;
 }
 
 .filter fieldset {
@@ -1330,6 +1332,12 @@ p.delivery-partners {
 .filter-radio:checked + label:hover::before,
 .filter-radio + label:hover::before {
   opacity: 0.6;
+}
+
+.filters .button {
+  margin-top: -2px;
+  padding-right: 38px;
+  padding-left: 40px;
 }
 
 /* catalog */
@@ -1537,6 +1545,42 @@ p.delivery-partners {
 
 /* Modal */
 
+@keyframes bounce {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-5px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(5px);
+  }
+}
+
 .modal {
   position: fixed;
   top: 50%;
@@ -1550,6 +1594,16 @@ p.delivery-partners {
 
   background-color: #ffffff;
   box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
+}
+
+.modal-show {
+  display: block;
+
+  animation: bounce 0.7s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal-feedback {
@@ -1611,8 +1665,31 @@ p.delivery-partners {
   color: rgba(70, 70, 70, 0.4);
 }
 
+.feedback-form input:invalid,
+.feedback-form textarea:invalid {
+  background-color: #f6dada;
+  box-shadow: none;
+}
+
+.modal-map iframe {
+  position: relative;
+  z-index: 2;
+
+  border: none;
+}
+
+.modal-map img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  margin: 0;
+}
+
 .button-close {
   position: absolute;
+  z-index: 3;
   top: 22px;
   right: 22px;
 
