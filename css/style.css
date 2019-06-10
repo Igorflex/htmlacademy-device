@@ -201,7 +201,6 @@ img {
   background-repeat: no-repeat;
   background-position: 3px 18px;
   border: 0;
-  border-bottom: 2px solid transparent;
 }
 
 .search-input::placeholder {
@@ -212,16 +211,13 @@ img {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.search-input:focus,
-.search-input:valid {
-  border-bottom: 2px solid #000000;
-}
-
 .search-input:invalid {
   outline: none;
+  box-shadow: none;
 }
 
 .search-button {
+  position: relative;
   padding: 15px;
 
   background-color: transparent;
@@ -232,6 +228,21 @@ img {
 .search-input:focus ~ .search-button,
 .search-input:valid ~ .search-button {
   visibility: visible;
+}
+
+.search-button:hover::before,
+.search-button:focus::before,
+.search-button:active::before,
+.search-input:focus ~ .search-button::before,
+.search-input:valid ~ .search-button::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -2px;
+
+  width: 440px;
+
+  border-bottom: 2px solid #000000;
 }
 
 .search-button:hover,
