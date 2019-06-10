@@ -218,6 +218,7 @@ img {
 
 .search-button {
   position: relative;
+
   padding: 15px;
 
   background-color: transparent;
@@ -256,7 +257,6 @@ img {
 .search-button:active {
   color: rgba(255, 255, 255, 0.3);
 }
-
 
 .user-list {
   display: flex;

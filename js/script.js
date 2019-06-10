@@ -28,7 +28,7 @@ feedbackLink.addEventListener("click", function (evt) {
   }
 });
 
-closeButton.addEventListener("click", function(evt) {
+closeButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   feedbackModal.classList.remove("modal-show");
   feedbackModal.classList.remove("modal-error");
@@ -78,8 +78,8 @@ mapClose.addEventListener("click", function (evt) {
 });
 
 window.addEventListener("keydown", function (evt) {
-  evt.preventDefault();
   if (evt.keyCode === 27) {
+    evt.preventDefault();
     if (mapModal.classList.contains("modal-show")) {
       mapModal.classList.remove("modal-show");
     }
