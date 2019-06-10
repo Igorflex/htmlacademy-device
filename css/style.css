@@ -239,6 +239,7 @@ img {
   color: rgba(255, 255, 255, 1);
 
   background-color: #000000;
+  visibility: visible;
 }
 
 .search-button:active {
@@ -1689,9 +1690,9 @@ p.delivery-partners {
 
 .button-close {
   position: absolute;
-  z-index: 3;
   top: 22px;
   right: 22px;
+  z-index: 3;
 
   width: 55px;
   height: 55px;
