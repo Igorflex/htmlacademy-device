@@ -95,7 +95,7 @@
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
           </li>
-          <li class="breadcrumbs-item ">
+          <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="#">Каталог товаров</a>
           </li>
           <li class="breadcrumbs-item breadcrumbs-item--current">
@@ -105,13 +105,65 @@
       </div>
     </div>
 
+    <div class="sort-columns">
+      <div class="container">
+        <div class="sort-wrapper">
+          <p class="filter-heading">Фильтр:</p>
+          <div class="sort">
+            <p class="sort-heading">Сортировка:</p>
+            <ul class="sort-list">
+              <li class="sort-item">
+                <a>По цене</a>
+              </li>
+              <li class="sort-item">
+                <a class="sort-link" href="#">По типу</a>
+              </li>
+              <li class="sort-item">
+                <a class="sort-link" href="#">По популярности</a>
+              </li>
+            </ul>
+            <ul class="sort-order-list">
+              <li class="sort-order-item">
+                <a class="sort-order-link sort-order--ascending" href="#">
+                  <span class="visually-hidden">По возрастанию</span>
+                </a>
+              </li>
+              <li class="sort-order-item">
+                <a class="sort-order-link sort-order--descending">
+                  <span class="visually-hidden">По убыванию</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="catalog-columns">
       <div class="container">
         <div class="catalog-wrapper">
           <section class="filters">
             <h2 class="visually-hidden">Фильтр товаров</h2>
             <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-              <fieldset>
+              <fieldset class="price-group">
+                <legend>Стоимость</legend>
+                <div class="price-filter">
+                  <div class="price-bar">
+                    <div class="price-line"></div>
+                  </div>
+                  <button class="price-toggle price-toggle--min" type="button">
+                    <span class="visually-hidden">Минимальная стоимость</span>
+                  </button>
+                  <button class="price-toggle price-toggle--max" type="button">
+                    <span class="visually-hidden">Максимальная стоимость</span>
+                  </button>
+                  <div class="price-controls">
+                      <label class="min-price">от <input name="min-price" type="text" value="0" disabled></label>
+                      <label class="max-price">до <input name="max-price" type="text" value="5000" disabled></label>
+                    </div>
+                </div>
+              </fieldset>
+              <fieldset class="color-group">
                 <legend>Цвет</legend>
                 <ul class="filter-list">
                   <li class="filter-option">
@@ -142,7 +194,7 @@
                 </ul>
               </fieldset>
 
-              <fieldset>
+              <fieldset class="bluetooth-group">
                 <legend>Bluetooth</legend>
                 <ul class="filter-list">
                   <li class="filter-option">
@@ -175,7 +227,7 @@
                   </div>
                 </div>
                 <div class="product-description">
-                  <a href="#">
+                  <a class="product-link" href="#">
                     <h3 class="product-title">Любительская селфи-палка</h3>
                   </a>
                   <span class="product-price">500 руб.</span>
@@ -191,8 +243,8 @@
                   </div>
                 </div>
                 <div class="product-description">
-                  <a href="#">
-                    <h3 class="product-title">Профессиональная <br>селфи-палка</h3>
+                  <a class="product-link" href="#">
+                    <h3 class="product-title">Профессиональная селфи-палка</h3>
                   </a>
                   <span class="product-price">1 500 руб.</span>
                 </div>
@@ -207,7 +259,7 @@
                   </div>
                 </div>
                 <div class="product-description">
-                  <a href="#">
+                  <a class="product-link" href="#">
                     <h3 class="product-title">Непотопляемая селфи-палка</h3>
                   </a>
                   <span class="product-price">2 500 руб.</span>
@@ -223,7 +275,7 @@
                   </div>
                 </div>
                 <div class="product-description">
-                  <a href="#">
+                  <a class="product-link" href="#">
                     <h3 class="product-title">Селфи-палка «Следуй за мной»</h3>
                   </a>
                   <span class="product-price">4 900 руб.</span>
