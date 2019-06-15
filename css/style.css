@@ -2258,6 +2258,7 @@ p.delivery-partners {
   position: fixed;
   top: 50%;
   left: 50%;
+  z-index: 5;
 
   display: none;
   width: 960px;
@@ -2395,7 +2396,6 @@ p.delivery-partners {
   position: absolute;
   top: 22px;
   right: 22px;
-  z-index: 3;
 
   width: 55px;
   height: 55px;
