@@ -1929,6 +1929,11 @@ p.delivery-partners {
   opacity: 0.6;
 }
 
+.filter-checkbox:focus + label::before,
+.filter-radio:focus + label::before {
+  opacity: 0.6;
+}
+
 .filters .button {
   margin-top: -2px;
   padding-right: 38px;
