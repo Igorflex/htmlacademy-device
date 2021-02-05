@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Дмитрий Иванов](https://up.htmlacademy.ru/htmlcss/25/user/1030339).
-* Наставни:ок-Новичок ))): [Анна Пономарёва](https://up.htmlacademy.ru/htmlcss/25/user/153610).
+* Наставни:ок-Новичок ))))))): [Анна Пономарёва](https://up.htmlacademy.ru/htmlcss/25/user/153610).
 
 ---
 
